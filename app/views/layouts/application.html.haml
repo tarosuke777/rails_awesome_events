@@ -19,10 +19,10 @@
             %li.nav-item
               = link_to "Retirement", new_retirement_path, class: "nav-link"
             %li.nav-item
-              = link_to "GitHub Logout", logout_path, class: "nav-link", method: :delete
+              = link_to "GitHubでログアウト", logout_path, class: "nav-link", method: :delete
           - else
             %li.nav-item
-              = link_to "GitHub Login", "/auth/github", class: "nav-link", method: :post
+              = link_to "GitHubでログイン", "/auth/github", class: "nav-link", method: :post
     .container
       - if flash.notice
         .alert.alert-success

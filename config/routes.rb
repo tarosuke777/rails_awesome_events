@@ -10,7 +10,7 @@ Rails.application.routes.draw do
     resources :tickets, only: %i[new create destroy]
   end
   
-  get 'status' => 'status#index', defaults: {format: 'json'}
+  get 'status' => 'status#index', defaults: { format: 'json' }
 
   match "*path" => "application#error404", via: :all
 

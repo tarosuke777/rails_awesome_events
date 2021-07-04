@@ -27,7 +27,7 @@ class Event < ApplicationRecord
         return unless  start_at && end_at
             
         if start_at >= end_at 
-            errors.add(:start_dt, "is before end_at")
+            errors.add(:start_at, "is before end_at")
         end
     end 
 
